@@ -1,3 +1,8 @@
 # InsuranceClaimsSeverityPrediction
 
-This project develops a machine learning model that predicts insurance claim severity. It uses data from Allstate Claims Severity data, which is available in Kaggle at https://www.kaggle.com/c/allstate-claims-severity/data.. The data was explored for missing values, and outliers to develop robust machine learning (ML) models. The loss prediction was modelled using Random Forest and Gradient Boosting Regressors. For both models, prediction was attempted using the base model; however to improve the predictions, the hyperparameters were tuned using Random Search CV. The Grid Search CV was also tried. However, as it took too long time to complete the parameter search, the optimization was aborted. Likewise, my computer's memory wasn't sufficient to model the problem using XGBoost Machine Learning algorithm. Of the modelled approaches, the Gradient Boosting regressor with Random Search CV provided better mean square error.
+This project develops a machine learning model that predicts insurance claim severity. It uses data from Allstate Claims Severity data, which is available in Kaggle at https://www.kaggle.com/c/allstate-claims-severity/data. The project includes:
+- exploring the data such as checking missing values, and outliers. The outliers were handled using interquartile range IQR) approach
+- Numerical and catagorical feature selection
+- base model development using Random Forest and Gradient Boosting regressors
+- hyperparameters tunning using Random Search CV. The Grid Search CV was also tried, but as it took too long time to complete the parameter search, the optimization was aborted. Likewise, my computer's memory wasn't sufficient to model the problem using XGBoost Machine Learning algorithm.
+- Of the modelled approaches, the Gradient Boosting regressor with Random Search CV provided better mean square error.
